@@ -127,6 +127,7 @@
 <script src="js/bootstrap.bundle.5.1.3.min.js"></script>
 <script src="js/instantpages.5.1.0.min.js"></script>
 <script src="js/lazyload.17.6.0.min.js"></script>
+<script src="js/ionrange.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/custom.js"></script>
 
