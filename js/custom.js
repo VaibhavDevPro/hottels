@@ -167,3 +167,65 @@ document.addEventListener("click", e => {
     toggle.checked = false;
   }
 });
+
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+
+const hotelListing = `
+			<div class="result-box-container">
+				<div class="result-box-container-left">
+					<img src="./images/hotel.png" alt="Hotel Image">
+				</div>
+				<div class="result-box-container-right">
+					<div class="content">
+						<h6>Fairfield by Marriott Goa Calangute</h6>
+						<span class="location">Calangute, Goa</span>
+						<div class="facilities">
+							<div class="facilities-box">
+								<img src="./images/pool.svg" alt="Swimming Pool">
+								<span>Swimming Pool</span>
+							</div>
+							<div class="facilities-box">
+								<img src="./images/restaurant.svg" alt="Restaurant">
+								<span>Restaurant</span>
+							</div>
+						</div>
+						<p>Unlock Goa with the perfect stay with 2 pints of chilled beers & discount on F&B at Fairfield by Marriott Calangute.</p>
+						<div class="rating-verify">
+							<span class="rating">9/10</span>
+							<p>2 Verified Ratings</p>
+						</div>
+					</div>
+					<div class="content-right">
+						<div class="parking-rating">
+							<button type="button" class="btn btn-secondary parking" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Parking">
+								<i class="bi bi-car-front-fill"></i>
+							</button>
+							<div class="star-rating">
+								<img src="./images/grade.svg" alt="3 Star Hotel">
+								<p>3 Star Hotel</p>
+							</div>
+						</div>
+						<div class="price-rate">
+							<span class="left_at">3 left at</span>
+							<div class="price-cut">
+								<p><s>15,000</s></p>
+								<div class="price-night">
+									<h5>₹4,950</h5>
+									<p>per night</p>
+								</div>
+							</div>
+							<div class="rest-detials">
+								<p>₹25,974 total includes taxes & fees</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		`;
+
+		const listingsContainer = document.getElementById('hotel-listings');
+		for (let i = 0; i < 7; i++) {
+			listingsContainer.innerHTML += hotelListing;
+		}

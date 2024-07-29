@@ -140,6 +140,7 @@ button,
             background-color: $primary_color;
             border-color: $primary_color;
             color: $primary_white;
+
         }
     }
 
@@ -250,6 +251,10 @@ button,
         outline: none;
         box-shadow: none;
     }
+}
+
+.btn-check:focus+.btn-secondary, .btn-secondary:focus{
+    box-shadow: none;
 }
 
 .form-group {
@@ -1218,6 +1223,8 @@ footer {
                 display: flex;
                 flex-direction: column;
                 gap: 1.5rem;
+                position: sticky;
+                top: 6rem;
 
                 .select-filter {
                     h5 {
@@ -1651,7 +1658,7 @@ footer {
                 .result-box {
                     display: flex;
                     flex-direction: column;
-                    gap: 0.75rem;
+                    gap: 1.55rem;
 
                     .result-box-container {
                         display: flex;
@@ -1660,12 +1667,12 @@ footer {
                         padding: 1.5rem;
                         border-radius: 0.5rem;
                         border: 1px solid $stroke_color;
-                        gap: 1.15rem;
+                        gap: 1.5rem;
+
+                        box-shadow: #0003 0px 4px 4px -2px;
 
                         .result-box-container-left {
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
+                            width: 20rem;
 
                             img {
                                 border-radius: 12px;
@@ -1682,8 +1689,7 @@ footer {
                             .content {
                                 display: flex;
                                 flex-direction: column;
-                                gap: 2rem;
-                                border-radius: 1px solid $stroke_color;
+                                gap: 1.5rem;
 
                                 h6 {
                                     font-size: 1.25rem;
@@ -1751,23 +1757,25 @@ footer {
                             .content-right {
                                 display: flex;
                                 flex-direction: column;
-                                gap: 4rem;
+                                gap: 2rem;
+                                border-left: 1px solid $stroke_color;
+                                padding-left: 1.2rem;
 
                                 .parking-rating {
                                     display: flex;
                                     align-items: center;
-                                    justify-content: center;
+                                    justify-content: space-between;
                                     gap: 0.675rem;
-                                    ;
 
                                     .parking {
                                         border-radius: 8px;
-                                        background-color: $theme_red;
+                                        background-color: $theme_green;
                                         font-family: $secondary_font;
                                         color: $primary_white;
                                         font-size: 0.875rem;
                                         line-height: 1.25rem;
                                         padding: 8px 12px;
+                                        border:none;
                                     }
 
                                     .star-rating {
@@ -1777,13 +1785,18 @@ footer {
                                         border-radius: 8px;
                                         border: 1px solid $stroke_color;
                                         padding: 0.4rem 0.5rem;
-                                        width: 8rem;
+                                        // width: 10rem;
                                         max-width: 100%;
                                         gap: 4px;
+
+                                        .bi{
+                                            color: #FFC531;
+                                        }
 
                                         img {
                                             width: 1.5rem;
                                             height: 1.5rem;
+                                            display: none;
                                         }
 
                                         p {
@@ -1793,8 +1806,76 @@ footer {
                                         }
                                     }
                                 }
+
+                                .price-rate {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-end;
+                                    gap: 1rem;
+
+                                    .left_at {
+                                        background: $theme_dark_red;
+                                        padding: 8px 4px;
+                                        border-radius: 8px;
+                                        color: $primary_white;
+                                        font-size: 0.875rem;
+                                    }
+
+                                    .price-cut {
+                                        display: flex;
+                                        justify-content: end;
+                                        gap: 0.5rem;
+
+                                        p {
+                                            margin-top: 0.3rem;
+                                            color: $primary_fill_four;
+                                            font-size: 0.875rem;
+
+                                            s {
+                                                text-decoration: line-through;
+                                                -webkit-text-decoration-color: $theme_dark_red;
+                                                text-decoration-color: $theme_dark_red;
+                                            }
+                                        }
+
+                                        .price-night {
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: flex-end;
+
+                                            h5 {
+                                                font-size: 1.25rem;
+                                                font-family: $secondary_color;
+                                                color: $primary_black;
+                                            }
+
+                                            p {
+                                                font-size: 0.875rem;
+                                                font-family: $secondary_color;
+                                                color: $primary_fill_four;
+                                            }
+                                        }
+                                    }
+
+                                    .rest-detials {
+                                        color: $primary_fill_four;
+                                        font-size: 1rem;
+                                        text-align: end;
+                                    }
+                                }
                             }
                         }
+                    }
+                }
+            }
+
+            .filter-mobile {
+                .offcanvas {
+                    .offcanvas-header {
+                        justify-content: space-between !important;
+                        padding: 1rem !important;
+                        display: flex;
+                        align-items: center;
                     }
                 }
             }
@@ -1802,7 +1883,19 @@ footer {
     }
 }
 
-
+// Custom SCSS for Bootstrap tooltip
+.custom-tooltip {
+    --bs-tooltip-bg: #1A1F24;
+    --bs-tooltip-color: white;
+    --bs-tooltip-border-radius: 8px;
+  }
+  
+  .tooltip-inner {
+    background-color: var(--bs-tooltip-bg);
+    color: var(--bs-tooltip-color);
+    border-radius: var(--bs-tooltip-border-radius);
+  }
+    
 
 .dropdown {
     width: 100%;
@@ -1895,7 +1988,11 @@ footer {
 .form-check-input:focus {
     box-shadow: none;
 }
-
+#hotel-listings{
+    display: flex;
+    flex-direction: column;
+    gap: 1.55rem;
+}
 /*
     Each website must have the following global styles:
     - table             - Table

@@ -62,7 +62,7 @@
 
 	<section class="seach-results">
 		<div class="row">
-			<div class="col-md-3">
+			<div class="col-md-3 col-xl-3  d-none d-lg-block">
 				<div class="seach-results-left">
 					<div class="select-filter">
 						<h5>Select Filters</h5>
@@ -73,7 +73,6 @@
 							</button>
 						</div>
 					</div>
-
 					<div class="section-rest-filter">
 						<div class="popular-filters">
 							<h5>
@@ -341,18 +340,319 @@
 							</div>
 						</div>
 					</div>
-
 				</div>
 			</div>
-			<div class="col-md-9">
+			<div class="d-block d-lg-none filter-mobile">
+
+				<div class="offcanvas offcanvas-start" tabindex="-1" id="all-filters" aria-labelledby="all-filtersLabel">
+					<div class="offcanvas-header">
+						<h5 class="offcanvas-title" id="all-filtersLabel">All Filters</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+					</div>
+					<div class="offcanvas-body">
+						<div>
+							<div class="seach-results-left">
+								<div class="select-filter">
+									<h5>Select Filters</h5>
+									<div class="map">
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.954671015365!2d81.00554317602152!3d26.841394013150627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be301f7b7b893%3A0x23d0b9cb472775ac!2sOmmune!5e0!3m2!1sen!2sin!4v1722063889175!5m2!1sen!2sin" height="160" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+										<button>
+											View in Map
+										</button>
+									</div>
+								</div>
+								<div class="section-rest-filter">
+									<div class="popular-filters">
+										<h5>
+											Popular filters
+										</h5>
+										<div class="check-seach">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="star-three">
+												<label class="form-check-label" for="free_cancellation">
+													Free cancellation
+												</label>
+											</div>
+											<span>
+												527
+											</span>
+										</div>
+										<div class="check-seach">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="star_rating">
+												<label class="form-check-label" for="star_rating">
+													4 stars
+												</label>
+											</div>
+											<span>
+												46
+											</span>
+										</div>
+										<div class="check-seach">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" checked id="family_rooms">
+												<label class="form-check-label" for="family_rooms">
+													Family rooms
+												</label>
+											</div>
+											<span>
+												440
+											</span>
+										</div>
+										<div class="check-seach">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" checked value="" id="breakfast_included">
+												<label class="form-check-label" for="breakfast_included">
+													Breakfast included
+												</label>
+											</div>
+											<span>
+												246
+											</span>
+										</div>
+										<div class="check-seach">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" checked value="" id="hotels">
+												<label class="form-check-label" for="hotels">
+													Hotels
+												</label>
+											</div>
+											<span>
+												346
+											</span>
+										</div>
+									</div>
+									<div class="price-ranges">
+										<h5>
+											Price Range
+										</h5>
+										<div class="wrapper">
+											<div class="price-container mb-0">
+												<div class="slider-track"></div>
+												<input type="range" class="price-range" min="1000" max="25000" value="4000" id="slider-1" oninput="slideOne()">
+												<input type="range" class="price-range" min="1000" max="25000" value="20000" id="slider-2" oninput="slideTwo()">
+											</div>
+											<div class="values d-flex justify-content-between  mb-3 fw-bold fs-7">
+												<span id="range1">
+													1,000
+												</span>
+												<span id="range2">
+													25,000
+												</span>
+											</div>
+										</div>
+									</div>
+									<div class="star-category">
+										<h5>
+											Star Category
+										</h5>
+										<div class="check-seach">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="star-four">
+												<label class="form-check-label" for="star-four">
+													4 Star
+												</label>
+											</div>
+											<span>
+												527
+											</span>
+										</div>
+										<div class="check-seach">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="star-three">
+												<label class="form-check-label" for="star-three">
+													3 Star
+												</label>
+											</div>
+											<span>
+												527
+											</span>
+										</div>
+										<div class="check-seach">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="three_star_plus">
+												<label class="form-check-label" for="three_star_plus">
+													3+ Star
+												</label>
+											</div>
+											<span>
+												527
+											</span>
+										</div>
+									</div>
+									<div class="reservation-policy">
+										<h5>
+											Reservation Policy
+										</h5>
+										<div class="check-seach">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="free_cancel">
+												<label class="form-check-label" for="free_cancel">
+													Free cancellation
+												</label>
+											</div>
+											<span>
+												527
+											</span>
+										</div>
+										<div class="check-seach">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="without_card">
+												<label class="form-check-label" for="without_card">
+													Book without credit card
+												</label>
+											</div>
+											<span>
+												527
+											</span>
+										</div>
+										<div class="check-seach">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="no_prepayment">
+												<label class="form-check-label" for="no_prepayment">
+													No prepayment
+												</label>
+											</div>
+											<span>
+												527
+											</span>
+										</div>
+									</div>
+									<div class="facilities">
+										<h5>
+											Facilities
+										</h5>
+										<div class="check-seach">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" checked value="" id="free_wifi">
+												<label class="form-check-label" for="free_wifi">
+													Free WiFi
+												</label>
+											</div>
+											<span>
+												527
+											</span>
+										</div>
+										<div class="check-seach">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" checked value="" id="family_room">
+												<label class="form-check-label" for="family_room">
+													Family rooms
+												</label>
+											</div>
+											<span>
+												527
+											</span>
+										</div>
+										<div class="check-seach">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" checked value="" id="parking">
+												<label class="form-check-label" for="parking">
+													Parking
+												</label>
+											</div>
+											<span>
+												527
+											</span>
+										</div>
+										<div class="check-seach">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" checked value="" id="private_pool">
+												<label class="form-check-label" for="private_pool">
+													Private pool
+												</label>
+											</div>
+											<span>
+												527
+											</span>
+										</div>
+										<div class="check-seach">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" checked value="" id="kitchen">
+												<label class="form-check-label" for="kitchen">
+													Kitchen
+												</label>
+											</div>
+											<span>
+												527
+											</span>
+										</div>
+									</div>
+									<div class="bed-preference">
+										<h5>
+											Bed preference
+										</h5>
+										<div class="check-seach">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="Twin Beds">
+												<label class="form-check-label" for="Twin Beds">
+													Twin beds
+												</label>
+											</div>
+											<span>
+												527
+											</span>
+										</div>
+										<div class="check-seach">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="double_bed">
+												<label class="form-check-label" for="double_bed">
+													Double bed
+												</label>
+											</div>
+											<span>
+												527
+											</span>
+										</div>
+										<div class="check-seach">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="king_sized_bed">
+												<label class="form-check-label" for="king_sized_bed">
+													King sized bed
+												</label>
+											</div>
+											<span>
+												527
+											</span>
+										</div>
+										<div class="check-seach">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox" value="" id="queen_sized_bed">
+												<label class="form-check-label" for="queen_sized_bed">
+													Queen sized bed
+												</label>
+											</div>
+											<span>
+												527
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="dropdown mt-3">
+							<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+								Dropdown button
+							</button>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12 col-lg-12 col-xl-9">
 				<div class="search-results-right">
 					<div class="top-box">
 						<div class="top-box-left">
 							<h6>Panaji, Goa</h6>
 							<p>300+ properties found</p>
 						</div>
+
 						<div class="top-box-right">
-							<div class="dropdown">
+							<div class="dropdown d-none d-lg-block">
 								<input type="checkbox" class="dropdown__switch" id="filter-switch" hidden />
 								<label for="filter-switch" class="dropdown__options-filter">
 									<ul class="dropdown__filter" role="listbox" tabindex="-1">
@@ -382,10 +682,14 @@
 								</label>
 							</div>
 
-							<div class="form-group">
+							<div class="form-group d-none d-lg-block">
 								<input type="text" class="form-control" placeholder="Search by property name">
 								<i class="bi bi-search"></i>
 							</div>
+
+							<a class="btn btn-primary d-block d-lg-none" data-bs-toggle="offcanvas" href="#all-filters" role="button" aria-controls="all-filters">
+								Filter
+							</a>
 						</div>
 					</div>
 
@@ -416,16 +720,148 @@
 								</div>
 								<div class="content-right">
 									<div class="parking-rating">
-										<span class="parking">P</span>
+										<button type="button" class="btn btn-secondary parking" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Parking Available">
+											<i class="bi bi-car-front-fill"></i>
+										</button>
+
 										<div class="star-rating">
 											<img src="./images/grade.svg" alt="">
-											<p>3 Star Hotel</p>
+											<div class="d-flex gap-1 align-items-center">
+												<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+											</div>
+											<!-- <p>3 Star Hotel</p> -->
+										</div>
+									</div>
+									<div class="price-rate">
+										<span class="left_at">3 left at</span>
+										<div class="price-cut">
+											<p><s>15,000</s></p>
+											<div class="price-night">
+												<h5>₹4,950</h5>
+												<p>per night</p>
+											</div>
+										</div>
+										<div class="rest-detials">
+											<p> ₹25,974 total includes taxes & fees</p>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
+
+						<div class="result-box-container">
+							<div class="result-box-container-left">
+								<img src="./images/hotel.png" alt="">
+							</div>
+							<div class="result-box-container-right">
+								<div class="content">
+									<h6>Fairfield by Marriott Goa Calangute</h6>
+									<span class="location">Calangute, Goa</span>
+									<div class="facilities">
+										<div class="facilities-box">
+											<img src="./images/pool.svg" alt="">
+											<span>Swimming Pool</span>
+										</div>
+										<div class="facilities-box">
+											<img src="./images/restaurant.svg" alt="">
+											<span>Restaurantl</span>
+										</div>
+									</div>
+									<p>Unlock Goa with the perfect stay with 2 pints of chilled beers & discount on F&B at Fairfield by Marriott Calangute.</p>
+									<div class="rating-verify">
+										<span class="rating">9/10</span>
+										<p>2 Verified Ratings</p>
+									</div>
+								</div>
+								<div class="content-right">
+									<div class="parking-rating">
+										<button type="button" class="btn btn-secondary parking bg-danger" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="No Parking Available">
+											<i class="bi bi-car-front-fill "></i>
+										</button>
+
+										<div class="star-rating">
+											<img src="./images/grade.svg" alt="">
+											<div class="d-flex gap-1 align-items-center">
+												<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+											</div>
+											<!-- <p>3 Star Hotel</p> -->
+										</div>
+									</div>
+									<div class="price-rate">
+										<span class="left_at">3 left at</span>
+										<div class="price-cut">
+											<p><s>15,000</s></p>
+											<div class="price-night">
+												<h5>₹4,950</h5>
+												<p>per night</p>
+											</div>
+										</div>
+										<div class="rest-detials">
+											<p> ₹25,974 total includes taxes & fees</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="result-box-container">
+							<div class="result-box-container-left">
+								<img src="./images/hotel.png" alt="">
+							</div>
+							<div class="result-box-container-right">
+								<div class="content">
+									<h6>Fairfield by Marriott Goa Calangute</h6>
+									<span class="location">Calangute, Goa</span>
+									<div class="facilities">
+										<div class="facilities-box">
+											<img src="./images/pool.svg" alt="">
+											<span>Swimming Pool</span>
+										</div>
+										<div class="facilities-box">
+											<img src="./images/restaurant.svg" alt="">
+											<span>Restaurantl</span>
+										</div>
+									</div>
+									<p>Unlock Goa with the perfect stay with 2 pints of chilled beers & discount on F&B at Fairfield by Marriott Calangute.</p>
+									<div class="rating-verify">
+										<span class="rating">9/10</span>
+										<p>2 Verified Ratings</p>
+									</div>
+								</div>
+								<div class="content-right">
+									<div class="parking-rating">
+										<button type="button" class="btn btn-secondary parking bg-warning" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="No Parking Available">
+											<i class="bi bi-car-front-fill "></i>
+										</button>
+
+										<div class="star-rating">
+											<img src="./images/grade.svg" alt="">
+											<div class="d-flex gap-1 align-items-center">
+												<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+											</div>
+											<!-- <p>3 Star Hotel</p> -->
+										</div>
+									</div>
+									<div class="price-rate">
+										<span class="left_at">3 left at</span>
+										<div class="price-cut">
+											<p><s>15,000</s></p>
+											<div class="price-night">
+												<h5>₹4,950</h5>
+												<p>per night</p>
+											</div>
+										</div>
+										<div class="rest-detials">
+											<p> ₹25,974 total includes taxes & fees</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="hotel-listings"></div>
+
 					</div>
+
 				</div>
 			</div>
 		</div>
