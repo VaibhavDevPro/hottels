@@ -145,27 +145,27 @@ function fillColor() {
 // Change option selected
 const label = document.querySelector(".dropdown__filter-selected");
 const options = Array.from(
-document.querySelectorAll(".dropdown__select-option"));
+    document.querySelectorAll(".dropdown__select-option"));
 
 
 options.forEach(option => {
-  option.addEventListener("click", () => {
-    label.textContent = option.textContent;
-  });
+    option.addEventListener("click", () => {
+        label.textContent = option.textContent;
+    });
 });
 
 // Close dropdown onclick outside
 document.addEventListener("click", e => {
-  const toggle = document.querySelector(".dropdown__switch");
-  const element = e.target;
+    const toggle = document.querySelector(".dropdown__switch");
+    const element = e.target;
 
-  if (element == toggle) return;
+    if (element == toggle) return;
 
-  const isDropdownChild = element.closest(".dropdown__filter");
+    const isDropdownChild = element.closest(".dropdown__filter");
 
-  if (!isDropdownChild) {
-    toggle.checked = false;
-  }
+    if (!isDropdownChild) {
+        toggle.checked = false;
+    }
 });
 
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
@@ -225,7 +225,37 @@ const hotelListing = `
 			</div>
 		`;
 
-		const listingsContainer = document.getElementById('hotel-listings');
-		for (let i = 0; i < 7; i++) {
-			listingsContainer.innerHTML += hotelListing;
-		}
+const listingsContainer = document.getElementById('hotel-listings');
+for (let i = 0; i < 7; i++) {
+    listingsContainer.innerHTML += hotelListing;
+}
+
+
+
+
+$('#hotel-slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    initialSlide: 1,
+    arrows: false,
+    prevArrow: '<i class="icon-left-open-1 arrow left-arrow"></i>',
+    nextArrow: '<i class="icon-right-open-1 arrow right-arrow"></i>',
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [{
+        breakpoint: 1200,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        }
+    }, {
+        breakpoint: 768,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        }
+    }]
+});
+

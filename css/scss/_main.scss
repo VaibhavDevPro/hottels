@@ -253,7 +253,8 @@ button,
     }
 }
 
-.btn-check:focus+.btn-secondary, .btn-secondary:focus{
+.btn-check:focus+.btn-secondary,
+.btn-secondary:focus {
     box-shadow: none;
 }
 
@@ -1664,20 +1665,51 @@ footer {
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
-                        padding: 1.5rem;
+                        padding: .75rem;
                         border-radius: 0.5rem;
                         border: 1px solid $stroke_color;
                         gap: 1.5rem;
+                        border-radius: 1.5rem;
 
                         box-shadow: #0003 0px 4px 4px -2px;
 
                         .result-box-container-left {
-                            width: 20rem;
+                            width: 15rem;
+
+                            #hotel-slider {
+                                .slick-dots {
+                                    li {
+                                        position: relative;
+
+                                        button {
+                                         
+                                            &::before {
+                                                font-family: 'slick';
+                                                font-size: 2rem;
+                                                line-height: 20px;
+                                                position: absolute;
+                                                top: -2rem;
+                                                left: 0;
+                                                width: 20px;
+                                                height: 20px;
+                                                content: '•';   
+                                                text-align: center;
+                                                opacity: 0.85;
+                                                color: $primary_white;
+                                                -webkit-font-smoothing: antialiased;
+                                                
+                                            }
+                                        }
+                                    }
+                                }                               
+                            }
+
+                            
 
                             img {
-                                border-radius: 12px;
-                                height: 15.625rem;
-                                width: 15.625rem;
+                                border-radius: 1rem;
+                                height: 15rem;
+                                width: 15rem;
                             }
                         }
 
@@ -1743,7 +1775,7 @@ footer {
                                         border-radius: 8px;
                                         color: $primary_white;
                                         font-size: .875rem;
-                                        padding: 8px 4px;
+                                        padding: 4px 8px;
                                     }
 
                                     p {
@@ -1764,7 +1796,7 @@ footer {
                                 .parking-rating {
                                     display: flex;
                                     align-items: center;
-                                    justify-content: space-between;
+                                    justify-content: end;
                                     gap: 0.675rem;
 
                                     .parking {
@@ -1774,24 +1806,55 @@ footer {
                                         color: $primary_white;
                                         font-size: 0.875rem;
                                         line-height: 1.25rem;
-                                        padding: 8px 12px;
-                                        border:none;
+                                        padding: 4px 8px;
+                                        border: none;
                                     }
 
                                     .star-rating {
-                                        display: flex;
-                                        align-items: center;
-                                        justify-content: space-between;
+
                                         border-radius: 8px;
                                         border: 1px solid $stroke_color;
-                                        padding: 0.4rem 0.5rem;
+                                        padding: 4px 8px;
                                         // width: 10rem;
-                                        max-width: 100%;
-                                        gap: 4px;
 
-                                        .bi{
-                                            color: #FFC531;
+                                        .rating {
+                                            display: flex;
+                                            flex-direction: row-reverse;
+                                            justify-content: center;
                                         }
+
+                                        .rating:not(:checked)>input {
+                                            position: absolute;
+                                            appearance: none;
+                                        }
+
+                                        .rating:not(:checked)>label {
+                                            cursor: pointer;
+                                            font-size: 0.875rem;
+                                            color: $primary_fill_four;
+                                        }
+
+                                        .rating:not(:checked)>label:before {
+                                            content: "★";
+                                        }
+
+                                        .rating>input:checked+label:hover,
+                                        .rating>input:checked+label:hover~label,
+                                        .rating>input:checked~label:hover,
+                                        .rating>input:checked~label:hover~label,
+                                        .rating>label:hover~input:checked~label {
+                                            color: $star_color;
+                                        }
+
+                                        .rating:not(:checked)>label:hover,
+                                        .rating:not(:checked)>label:hover~label {
+                                            color: $star_color_hover;
+                                        }
+
+                                        .rating>input:checked~label {
+                                            color: $star_color;
+                                        }
+
 
                                         img {
                                             width: 1.5rem;
@@ -1815,7 +1878,7 @@ footer {
 
                                     .left_at {
                                         background: $theme_dark_red;
-                                        padding: 8px 4px;
+                                        padding: 4px 8px;
                                         border-radius: 8px;
                                         color: $primary_white;
                                         font-size: 0.875rem;
@@ -1883,19 +1946,23 @@ footer {
     }
 }
 
+.result-box-container-left .slick-dotted.slick-slider{
+    margin-bottom: 0;
+}
+
 // Custom SCSS for Bootstrap tooltip
 .custom-tooltip {
     --bs-tooltip-bg: #1A1F24;
     --bs-tooltip-color: white;
     --bs-tooltip-border-radius: 8px;
-  }
-  
-  .tooltip-inner {
+}
+
+.tooltip-inner {
     background-color: var(--bs-tooltip-bg);
     color: var(--bs-tooltip-color);
     border-radius: var(--bs-tooltip-border-radius);
-  }
-    
+}
+
 
 .dropdown {
     width: 100%;
@@ -1988,11 +2055,13 @@ footer {
 .form-check-input:focus {
     box-shadow: none;
 }
-#hotel-listings{
+
+#hotel-listings {
     display: flex;
     flex-direction: column;
     gap: 1.55rem;
 }
+
 /*
     Each website must have the following global styles:
     - table             - Table

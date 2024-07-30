@@ -696,7 +696,14 @@
 					<div class="result-box">
 						<div class="result-box-container">
 							<div class="result-box-container-left">
-								<img src="./images/hotel.png" alt="">
+								<!-- <img src="./images/hotel.png" alt=""> -->
+								<div class="hotel-imgs" id="hotel-slider">
+									<div><img src="./images/hotel.png" alt=""></div>
+									<div><img src="./images/hotel.png" alt=""></div>
+									<div><img src="./images/hotel.png" alt=""></div>
+									<div><img src="./images/hotel.png" alt=""></div>
+									<div><img src="./images/hotel.png" alt=""></div>
+								</div>
 							</div>
 							<div class="result-box-container-right">
 								<div class="content">
@@ -727,7 +734,18 @@
 										<div class="star-rating">
 											<img src="./images/grade.svg" alt="">
 											<div class="d-flex gap-1 align-items-center">
-												<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+												<div class="rating">
+													<input type="radio" id="star1" name="rate" value="1">
+													<label for="star1" title="text"></label>
+													<input type="radio" id="star2" name="rate" value="2">
+													<label for="star2" title="text"></label>
+													<input checked="" type="radio" id="star3" name="rate" value="3">
+													<label for="star3" title="text"></label>
+													<input type="radio" id="star4" name="rate" value="4">
+													<label for="star4" title="text"></label>
+													<input type="radio" id="star5" name="rate" value="5">
+													<label for="star5" title="text"></label>
+												</div>
 											</div>
 											<!-- <p>3 Star Hotel</p> -->
 										</div>
@@ -782,7 +800,18 @@
 										<div class="star-rating">
 											<img src="./images/grade.svg" alt="">
 											<div class="d-flex gap-1 align-items-center">
-												<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+												<div class="rating">
+													<input type="radio" id="star1" name="rate" value="1">
+													<label for="star1" title="text"></label>
+													<input type="radio" id="star2" name="rate" value="2">
+													<label for="star2" title="text"></label>
+													<input checked="" type="radio" id="star3" name="rate" value="3">
+													<label for="star3" title="text"></label>
+													<input type="radio" id="star4" name="rate" value="4">
+													<label for="star4" title="text"></label>
+													<input type="radio" id="star5" name="rate" value="5">
+													<label for="star5" title="text"></label>
+												</div>
 											</div>
 											<!-- <p>3 Star Hotel</p> -->
 										</div>
@@ -837,7 +866,18 @@
 										<div class="star-rating">
 											<img src="./images/grade.svg" alt="">
 											<div class="d-flex gap-1 align-items-center">
-												<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+												<div class="rating">
+													<input type="radio" id="star1" name="rate" value="1">
+													<label for="star1" title="text"></label>
+													<input type="radio" id="star2" name="rate" value="2">
+													<label for="star2" title="text"></label>
+													<input checked="" type="radio" id="star3" name="rate" value="3">
+													<label for="star3" title="text"></label>
+													<input type="radio" id="star4" name="rate" value="4">
+													<label for="star4" title="text"></label>
+													<input type="radio" id="star5" name="rate" value="5">
+													<label for="star5" title="text"></label>
+												</div>
 											</div>
 											<!-- <p>3 Star Hotel</p> -->
 										</div>
