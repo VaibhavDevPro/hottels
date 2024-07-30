@@ -1409,7 +1409,7 @@ footer {
                                 text-align: center;
                                 font-weight: 500;
                                 font-size: 25px;
-                                color: #ffffff;
+                                color: $primary_white;
                             }
 
                             .price-container .values:before {
@@ -2008,3 +2008,7 @@ footer {
     - modal             - Popup Modal
     - span.preheading   - If headings have a preheading
 */
+
+.icon-menu:before {
+    content: ''
+}

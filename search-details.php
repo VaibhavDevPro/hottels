@@ -733,7 +733,7 @@
 										</div>
 									</div>
 									<div class="price-rate">
-										<span class="left_at">3 left at</span>
+										<span class="left_at">3 Left</span>
 										<div class="price-cut">
 											<p><s>15,000</s></p>
 											<div class="price-night">
@@ -788,7 +788,7 @@
 										</div>
 									</div>
 									<div class="price-rate">
-										<span class="left_at">3 left at</span>
+										<span class="left_at">3 Left</span>
 										<div class="price-cut">
 											<p><s>15,000</s></p>
 											<div class="price-night">
@@ -843,7 +843,7 @@
 										</div>
 									</div>
 									<div class="price-rate">
-										<span class="left_at">3 left at</span>
+										<span class="left_at">3 Left</span>
 										<div class="price-cut">
 											<p><s>15,000</s></p>
 											<div class="price-night">
