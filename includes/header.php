@@ -20,9 +20,12 @@
 	<title><?php echo (!empty($title)) ? 'Title-'.$title: 'Home'; ?></title>
 	<meta name="description" content="" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 	<meta name="HandheldFriendly" content="True" />
 	<meta name="pinterest" content="nopin" />
+	<link rel="stylesheet" type="text/css" href="css/flatpickr.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/select2.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/lightbox.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/style.min.css?v=<?php echo rand(1111,9999); ?>" />
 	<link rel="shortcut icon" type="image/x-icon" href="#" />
 </head>

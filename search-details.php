@@ -1,65 +1,192 @@
 <?php require_once 'includes/header.php'; ?>
-<div class="search-details-page">
-	<section class="section-1 lazy d-flex align-items-center bg-image-style" data-bg="images/search-result.png">
-	</section>
+<section class="top-bg lazy bg-image-style" data-bg="images/search-result.png">
+	
+</section>
+<section class="search-section other-page">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<form>
+					<div class="row g-0">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 repeat-section">
+							<div class="search-item position-relative room-search">
+						    	<label for="exampleInputEmail1" class="form-label">City / Location</label>
+						    	<h4 class="section-hotel origin-room">Panjim, Goa</h4>
+						    	<input type="email" class="form-control d-none" id="exampleInputEmail1" aria-describedby="emailHelp">
+						    	<div class="search-section search-sections-part">
+                                    <div class="search-content-container" id="search-box-container">
+                                        <ul class=" ">
+                                            <li class="mb-2 searcher">
+                                                <a href="#">
+                                                    <div class="d-flex justify-content-between w-100">
+                                                        <input type="text" class="form-control-custom w-100 search-depart" placeholder="City..">
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="deletable-li">
+                                                <a href="#">
+                                                    <div class="d-flex justify-content-between w-100">
+                                                        Enter 2 or more characters..
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <span class="appender-class"></span>
+                                            <li class="clicker">
+								                <a href="#">
+								                    <div class="d-flex justify-content-between w-100">
+								                        <div class="d-flex align-items-center">
+								                            <div class="icon">
+								                                <span class="icon-location"></span>
+								                            </div>
+								                            <div class="text ms-3">
+								                                <h5 class="city_name">Lucknow</h5>
+								                                <p class="state_name">Utter Pradesh</p>
+								                            </div>
+								                        </div>
+								                        <div class="count d-block text-center">
+								                        	<p>290</p>
+								                        	<b>Hotels</b>
+								                    	</div>
+								                    </div>
+								                </a>
+								            </li>
+								            <li class="clicker">
+								                <a href="#">
+								                    <div class="d-flex justify-content-between w-100">
+								                        <div class="d-flex align-items-center">
+								                            <div class="icon">
+								                                <span class="icon-location"></span>
+								                            </div>
+								                            <div class="text ms-3">
+								                                <h5 class="city_name">Kanpur</h5>
+								                                <p class="state_name">Utter Pradesh</p>
+								                            </div>
+								                        </div>
+								                        <div class="count d-block text-center">
+								                        	<p>290</p>
+								                        	<b>Hotels</b>
+								                    	</div>
+								                    </div>
+								                </a>
+								            </li>
+								            <li class="clicker">
+								                <a href="#">
+								                    <div class="d-flex justify-content-between w-100">
+								                        <div class="d-flex align-items-center">
+								                            <div class="icon">
+								                                <span class="icon-location"></span>
+								                            </div>
+								                            <div class="text ms-3">
+								                                <h5 class="city_name">Varansi</h5>
+								                                <p class="state_name">Utter Pradesh</p>
+								                            </div>
+								                        </div>
+								                        <div class="count d-block text-center">
+								                        	<p>290</p>
+								                        	<b>Hotels</b>
+								                    	</div>
+								                    </div>
+								                </a>
+								            </li>
+								            <li class="clicker">
+								                <a href="#">
+								                    <div class="d-flex justify-content-between w-100">
+								                        <div class="d-flex align-items-center">
+								                            <div class="icon">
+								                                <span class="icon-location"></span>
+								                            </div>
+								                            <div class="text ms-3">
+								                                <h5 class="city_name">Ayodhya</h5>
+								                                <p class="state_name">Utter Pradesh</p>
+								                            </div>
+								                        </div>
+								                        <div class="count d-block text-center">
+								                        	<p>290</p>
+								                        	<b>Hotels</b>
+								                    	</div>
+								                    </div>
+								                </a>
+								            </li>
+								            <li class="clicker">
+								                <a href="#">
+								                    <div class="d-flex justify-content-between w-100">
+								                        <div class="d-flex align-items-center">
+								                            <div class="icon">
+								                                <span class="icon-location"></span>
+								                            </div>
+								                            <div class="text ms-3">
+								                                <h5 class="city_name">Prayagraj</h5>
+								                                <p class="state_name">Utter Pradesh</p>
+								                            </div>
+								                        </div>
+								                        <div class="count d-block text-center">
+								                        	<p>290</p>
+								                        	<b>Hotels</b>
+								                    	</div>
+								                    </div>
+								                </a>
+								            </li>
 
-	<section class="search-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="tab-content">
-						<div class="tab-pane active" id="home">
-							<form>
-								<div class="row g-0">
-									<div class="col-3 repeat-section">
-										<div class="search-item">
-											<label for="exampleInputEmail1" class="form-label">City / Location</label>
-											<h4 class="section-hotel">Panjim, Goa</h4>
-											<input type="email" class="form-control d-none" id="exampleInputEmail1" aria-describedby="emailHelp">
-										</div>
-									</div>
-									<div class="col-2 repeat-section">
-										<div class="search-item">
-											<label for="exampleInputEmail1" class="form-label">Check In</label>
-											<h4 class="section-hotel">August 12, 2024</h4>
-											<input type="email" class="form-control d-none" id="exampleInputEmail1" aria-describedby="emailHelp">
-										</div>
-									</div>
-									<div class="col-2 repeat-section">
-										<div class="search-item">
-											<label for="exampleInputEmail1" class="form-label">Check out</label>
-											<h4 class="section-hotel">August 28, 2024</h4>
-											<input type="email" class="form-control d-none" id="exampleInputEmail1" aria-describedby="emailHelp">
-										</div>
-									</div>
-									<div class="col-2 repeat-section">
-										<div class="search-item">
-											<label for="exampleInputEmail1" class="form-label">Rooms & Guests</label>
-											<h4 class="section-hotel">1 Room, 2 Adults</h4>
-											<input type="email" class="form-control d-none" id="exampleInputEmail1" aria-describedby="emailHelp">
-										</div>
-									</div>
-									<div class="col-2 repeat-section">
-										<div class="search-item">
-											<label for="exampleInputEmail1" class="form-label">Price per night</label>
-											<h4 class="section-hotel">₹1500-₹2500</h4>
-											<input type="email" class="form-control d-none" id="exampleInputEmail1" aria-describedby="emailHelp">
-										</div>
-									</div>
-									<div class="col-1 repeat-section">
-										<div class="search-item">
-											<button class="btn btn-outline-primary d-flex" title="Search"><span class="icon-search-1 pe-2"></span>Search</button>
-										</div>
-									</div>
-								</div>
-							</form>
+                                        </ul>
+                                    </div>
+                                </div>
+						  	</div>			
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-2 repeat-section">
+							<div class="search-item">
+						    	<label for="exampleInputEmail1" class="form-label">Check In</label>
+						    	<h4 class="section-hotel check-in">August 12, 2024</h4>
+						    	<input type="email" class="form-control d-none " id="exampleInputEmail1" aria-describedby="emailHelp">
+						  	</div>			
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-2 repeat-section">
+							<div class="search-item">
+						    	<label for="exampleInputEmail1" class="form-label">Check out</label>
+						    	<h4 class="section-hotel check-out">August 28, 2024</h4>
+						    	<input type="email" class="form-control d-none" id="exampleInputEmail1" aria-describedby="emailHelp">
+						  	</div>			
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 repeat-section">
+							<div class="search-item position-relative">
+						    	<label for="exampleInputEmail1" class="form-label">Rooms & Guests</label>
+						    	<div class="booking-form__input guests-input">
+                                    <button type="button" class="form-control" name="guests-btn" id="guests-input-btn" fdprocessedid="ujwp02">1 Adults, 0 Child, 0 Rooms</button>
+                                    <div class="guests-input__options" id="guests-input-options">
+
+                                        <input type="hidden" name="adultCount" id="adultCount" value="1">
+                                        <input type="hidden" name="childCount" id="childCount" value="0">
+                                        <input type="hidden" name="roomCount" id="roomCount" value="0">
+                                        <div class="botder-bottom">
+                                            <span class="guests-input__ctrl minus disabled" id="adults-subs-btn"><i class="icon-minus"></i></span>
+                                            <span class="guests-input__value"><span id="guests-count-adults">1</span>Adults</span>
+                                            <span class="guests-input__ctrl plus" id="adults-add-btn"><i class="icon-plus"></i></span>
+                                        </div>
+                                        <div class="botder-bottom">
+                                            <span class="guests-input__ctrl minus disabled" id="children-subs-btn"><i class="icon-minus"></i></span>
+                                            <span class="guests-input__value"><span id="guests-count-children">0</span>Children</span>
+                                            <span class="guests-input__ctrl plus" id="children-add-btn"><i class="icon-plus"></i></span>
+                                        </div>
+                                        <div class="botder-bottom">
+                                            <span class="guests-input__ctrl minus disabled" id="room-subs-btn"><i class="icon-minus"></i></span>
+                                            <span class="guests-input__value"><span id="guests-count-room">0</span>Room</span>
+                                            <span class="guests-input__ctrl plus" id="room-add-btn"><i class="icon-plus"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+						  	</div>			
+						</div>
+						<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-2 repeat-section">
+							<div class="search-item">
+						   		<button class="btn btn-outline-primary d-flex" title="Search"><span class="icon-search-1 pe-2"></span>Search</button>
+						   	</div>			
 						</div>
 					</div>
-				</div>
+				</form>
 			</div>
 		</div>
-	</section>
-
+	</div>
+</section>
+<div class="search-details-page">
 	<section class="seach-results">
 		<div class="row">
 			<div class="col-md-3 col-xl-3  d-none d-lg-block">
@@ -630,16 +757,6 @@
 								</div>
 							</div>
 						</div>
-						<div class="dropdown mt-3">
-							<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-								Dropdown button
-							</button>
-							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="#">Action</a></li>
-								<li><a class="dropdown-item" href="#">Another action</a></li>
-								<li><a class="dropdown-item" href="#">Something else here</a></li>
-							</ul>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -711,11 +828,17 @@
 									<span class="location">Calangute, Goa</span>
 									<div class="facilities">
 										<div class="facilities-box">
-											<img src="./images/pool.svg" alt="">
+											<div class="icon">
+												<span class="icon-pool"></span>
+											</div>
 											<span>Swimming Pool</span>
 										</div>
 										<div class="facilities-box">
-											<img src="./images/restaurant.svg" alt="">
+											<div class="icon">
+												<span class="icon-restaurant">
+													
+												</span>
+											</div>
 											<span>Restaurantl</span>
 										</div>
 									</div>
@@ -728,7 +851,7 @@
 								<div class="content-right">
 									<div class="parking-rating">
 										<button type="button" class="btn btn-secondary parking" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Parking Available">
-											<i class="bi bi-car-front-fill"></i>
+											<i class="icon-car-6"></i>
 										</button>
 
 										<div class="star-rating">
@@ -767,7 +890,7 @@
 							</div>
 						</div>
 
-						<div class="result-box-container">
+						<div class="result-box-container bor">
 							<div class="result-box-container-left">
 								<img src="./images/hotel.png" alt="">
 							</div>
@@ -777,11 +900,15 @@
 									<span class="location">Calangute, Goa</span>
 									<div class="facilities">
 										<div class="facilities-box">
-											<img src="./images/pool.svg" alt="">
+											<div class="icon">
+												<span class="icon-pool"></span>
+											</div>
 											<span>Swimming Pool</span>
 										</div>
 										<div class="facilities-box">
-											<img src="./images/restaurant.svg" alt="">
+											<div class="icon">
+												<span class="icon-restaurant"></span>
+											</div>
 											<span>Restaurantl</span>
 										</div>
 									</div>
@@ -794,7 +921,7 @@
 								<div class="content-right">
 									<div class="parking-rating">
 										<button type="button" class="btn btn-secondary parking bg-danger" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="No Parking Available">
-											<i class="bi bi-car-front-fill "></i>
+											<i class="icon-car-6"></i>
 										</button>
 
 										<div class="star-rating">
@@ -843,11 +970,17 @@
 									<span class="location">Calangute, Goa</span>
 									<div class="facilities">
 										<div class="facilities-box">
-											<img src="./images/pool.svg" alt="">
+											<div class="icon">
+												<span class="icon-pool"></span>
+											</div>
 											<span>Swimming Pool</span>
 										</div>
 										<div class="facilities-box">
-											<img src="./images/restaurant.svg" alt="">
+											<div class="icon">
+												<span class="icon-restaurant">
+													
+												</span>
+											</div>
 											<span>Restaurantl</span>
 										</div>
 									</div>
@@ -860,7 +993,7 @@
 								<div class="content-right">
 									<div class="parking-rating">
 										<button type="button" class="btn btn-secondary parking bg-warning" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="No Parking Available">
-											<i class="bi bi-car-front-fill "></i>
+											<i class="icon-car-6"></i>
 										</button>
 
 										<div class="star-rating">

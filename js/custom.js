@@ -1,9 +1,9 @@
-$(document).ready(function () {
+$(document).ready(function(){
     const lazyLoadInstance = new LazyLoad({
-        elements_selector: "img.lazy, video.lazy, div.lazy, section.lazy, header.lazy, footer.lazy,iframe.lazy"
+        elements_selector:"img.lazy, video.lazy, div.lazy, section.lazy, header.lazy, footer.lazy,iframe.lazy"
     });
-    window.addEventListener('scroll', function () {
-        if (window.scrollY > 50) {
+    window.addEventListener('scroll', function() {
+       if (window.scrollY > 50) {
             $('#navbar').addClass('fixed-top');
             $('#black-logo').removeClass('d-none');
             $('#white-logo').addClass('d-none');
@@ -11,102 +11,244 @@ $(document).ready(function () {
             document.body.style.paddingTop = navbar_height + 'px';
         } else {
             $('#navbar').removeClass('fixed-top');
-            $('#white-logo').removeClass('d-none');
-            $('#black-logo').addClass('d-none');
+             $('#white-logo').removeClass('d-none');
+             $('#black-logo').addClass('d-none');
             document.body.style.paddingTop = '0';
-        }
+        } 
+    });
+    var fp = flatpickr(".check-in", {
+
+    })
+    var fp = flatpickr(".check-out", {
+
+    })
+
+    $('.select2-class').select2({
+      placeholder: 'Select an option'
     });
 });
 
-$('#destination-slider').slick({
+$('#destination-slider').slick({     
     slidesToShow: 4,
     slidesToScroll: 1,
     infinite: true,
     initialSlide: 1,
     arrows: true,
-    prevArrow: '<i class="icon-left-open-1 arrow left-arrow"></i>',
-    nextArrow: '<i class="icon-right-open-1 arrow right-arrow"></i>',
+    prevArrow:'<i class="icon-left-open-1 arrow left-arrow"></i>',
+    nextArrow:'<i class="icon-right-open-1 arrow right-arrow"></i>',
     dots: false,
     autoplay: true,
     autoplaySpeed: 2000,
     responsive: [{
-        breakpoint: 1200,
-        settings: {
+        breakpoint: 1024,
+          settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+          }
+        },{
+          breakpoint: 768,
+          settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              
+            
+          }
+        },{
+          breakpoint: 546,
+          settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-        }
-    }, {
-        breakpoint: 768,
-        settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            centerPadding: '30px',
-        }
-    }]
+            
+          }
+      }]
 });
-$('#slider-II').slick({
+$('#slider-II').slick({     
     slidesToShow: 4,
     slidesToScroll: 1,
     infinite: true,
     initialSlide: 1,
     arrows: true,
-    prevArrow: '<i class="icon-left-open-1 arrow left-arrow"></i>',
-    nextArrow: '<i class="icon-right-open-1 arrow right-arrow"></i>',
+    prevArrow:'<i class="icon-left-open-1 arrow left-arrow"></i>',
+    nextArrow:'<i class="icon-right-open-1 arrow right-arrow"></i>',
     dots: false,
     autoplay: true,
     autoplaySpeed: 2000,
     responsive: [{
-        breakpoint: 1200,
-        settings: {
+        breakpoint: 1024,
+          settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              
+          }
+        },{
+          breakpoint: 768,
+          settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+             
+            
+          }
+        },{
+          breakpoint: 546,
+          settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-        }
-    }, {
-        breakpoint: 768,
-        settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            centerPadding: '30px',
-        }
-    }]
+            
+          }
+      }]
 });
 
 
-$('#destination-slider-II').slick({
+$('#destination-slider-II').slick({     
     slidesToShow: 4,
     slidesToScroll: 1,
     infinite: true,
     initialSlide: 1,
     arrows: true,
-    prevArrow: '<i class="icon-left-open-1 arrow left-arrow"></i>',
-    nextArrow: '<i class="icon-right-open-1 arrow right-arrow"></i>',
+    prevArrow:'<i class="icon-left-open-1 arrow left-arrow"></i>',
+    nextArrow:'<i class="icon-right-open-1 arrow right-arrow"></i>',
     dots: false,
     autoplay: true,
     autoplaySpeed: 2000,
     responsive: [{
-        breakpoint: 1200,
-        settings: {
+        breakpoint: 1024,
+          settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+          }
+        },{
+          breakpoint: 768,
+          settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+          }
+        },{
+          breakpoint: 546,
+          settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
         }
-    }, {
-        breakpoint: 768,
-        settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            centerPadding: '30px',
-        }
-    }]
+      }]
 });
 
 
 
-// price range  
-// window.onload = function(){
-//   // Set initial values for the sliders
-//   sliderOne.value = 1000;
-//   sliderTwo.value = 25000;
-// }
+(function ($) {
+    "use strict";
+    
+    (function () {
+
+        // Add Adult & childElementCount
+        const guestBtn = document.querySelector("#guests-input-btn"),
+            guestOptions = document.querySelector("#guests-input-options"),
+            adultsSubsBtn = document.querySelector("#adults-subs-btn"),
+            adultsAddBtn = document.querySelector("#adults-add-btn"),
+            childrenSubsBtn = document.querySelector("#children-subs-btn"),
+            childrenAddBtn = document.querySelector("#children-add-btn"),
+            roomSubsBtn = document.querySelector("#room-subs-btn"),
+            roomAddBtn = document.querySelector("#room-add-btn"),
+            adultsCountEl = document.querySelector("#guests-count-adults"),
+            childrenCountEl = document.querySelector("#guests-count-children"),
+            roomCountEl = document.querySelector("#guests-count-room");
+        let maxNumGuests = 15,
+            isGuestInputOpen = false,
+            adultsCount = 1,
+            childrenCount = 0,
+            roomCount = 0;
+        updateValues();
+        guestBtn.addEventListener('click', function (e) {
+            if (isGuestInputOpen) {
+                guestBtn.classList.remove("open");
+                guestOptions.classList.remove("open");
+            } else {
+                guestBtn.classList.add("open");
+                guestOptions.classList.add("open");
+            }
+            isGuestInputOpen = isGuestInputOpen ? false : true;
+            e.preventDefault();
+        });
+        adultsAddBtn.addEventListener('click', function () {
+            adultsCount = addValues(adultsCount);
+            updateValues();
+        });
+        adultsSubsBtn.addEventListener('click', function () {
+            adultsCount = substractValues(adultsCount, 1);
+            updateValues();
+        });
+        childrenAddBtn.addEventListener('click', function () {
+            childrenCount = addValues(childrenCount);
+            updateValues();
+        });
+        childrenSubsBtn.addEventListener('click', function () {
+            childrenCount = substractValues(childrenCount, 0);
+            updateValues();
+        });
+        roomAddBtn.addEventListener('click', function () {
+            roomCount = addValues(roomCount);
+            updateValues();
+        });
+        roomSubsBtn.addEventListener('click', function () {
+            roomCount = substractValues(roomCount, 0);
+            updateValues();
+        });
+
+        function calcTotalGuests() {
+            return adultsCount + childrenCount + roomCount;
+        }
+
+        function addValues(count) {
+            return (calcTotalGuests() < maxNumGuests) ? count + 1 : count;
+        }
+
+        function substractValues(count, min) {
+            return (count > min) ? count - 1 : count;
+        }
+
+        function updateValues() {
+            let btnText = `${adultsCount} Adults`;
+            btnText += (childrenCount > 0) ? `, ${childrenCount} Childs` : '';
+            btnText += (roomCount > 0) ? `, ${roomCount} Rooms` : '';
+            guestBtn.innerHTML = btnText;
+            adultsCountEl.innerHTML = adultsCount;
+            childrenCountEl.innerHTML = childrenCount;
+            roomCountEl.innerHTML = roomCount;
+            if (adultsCount == 1) {
+                adultsSubsBtn.classList.add("disabled");
+            } else {
+                adultsSubsBtn.classList.remove("disabled");
+            } if (childrenCount == 0) {
+                childrenSubsBtn.classList.add("disabled");
+            } else {
+                childrenSubsBtn.classList.remove("disabled");
+            } if (roomCount == 0) {
+                roomSubsBtn.classList.add("disabled");
+            } else {
+                roomSubsBtn.classList.remove("disabled");
+            } if (calcTotalGuests() == maxNumGuests) {
+                adultsAddBtn.classList.add("disabled");
+                childrenAddBtn.classList.add("disabled");
+                roomAddBtn.classList.add("disabled");
+            } else {
+                adultsAddBtn.classList.remove("disabled");
+                childrenAddBtn.classList.remove("disabled");
+                roomAddBtn.classList.remove("disabled");
+            }
+        }
+
+    })();
+    
+    
+})(this.jQuery);
+
+$(window).on('click', function(e) {
+    if(!$(e.target).closest('.room-search').length && !$(e.target).closest('.search-sections-part').length){
+        if(!$('.search-sections-part').hasClass('d-none')){
+            $('.search-sections-part').addClass('d-none');
+        }
+    }
+});
+
+
 window.onload = function () {
     slideOne();
     slideTwo();
@@ -173,57 +315,57 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 
 
 const hotelListing = `
-			<div class="result-box-container">
-				<div class="result-box-container-left">
-					<img src="./images/hotel.png" alt="Hotel Image">
-				</div>
-				<div class="result-box-container-right">
-					<div class="content">
-						<h6>Fairfield by Marriott Goa Calangute</h6>
-						<span class="location">Calangute, Goa</span>
-						<div class="facilities">
-							<div class="facilities-box">
-								<img src="./images/pool.svg" alt="Swimming Pool">
-								<span>Swimming Pool</span>
-							</div>
-							<div class="facilities-box">
-								<img src="./images/restaurant.svg" alt="Restaurant">
-								<span>Restaurant</span>
-							</div>
-						</div>
-						<p>Unlock Goa with the perfect stay with 2 pints of chilled beers & discount on F&B at Fairfield by Marriott Calangute.</p>
-						<div class="rating-verify">
-							<span class="rating">9/10</span>
-							<p>2 Verified Ratings</p>
-						</div>
-					</div>
-					<div class="content-right">
-						<div class="parking-rating">
-							<button type="button" class="btn btn-secondary parking" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Parking">
-								<i class="bi bi-car-front-fill"></i>
-							</button>
-							<div class="star-rating">
-								<img src="./images/grade.svg" alt="3 Star Hotel">
-								<p>3 Star Hotel</p>
-							</div>
-						</div>
-						<div class="price-rate">
-							<span class="left_at">3 left at</span>
-							<div class="price-cut">
-								<p><s>15,000</s></p>
-								<div class="price-night">
-									<h5>₹4,950</h5>
-									<p>per night</p>
-								</div>
-							</div>
-							<div class="rest-detials">
-								<p>₹25,974 total includes taxes & fees</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		`;
+            <div class="result-box-container">
+                <div class="result-box-container-left">
+                    <img src="./images/hotel.png" alt="Hotel Image">
+                </div>
+                <div class="result-box-container-right">
+                    <div class="content">
+                        <h6>Fairfield by Marriott Goa Calangute</h6>
+                        <span class="location">Calangute, Goa</span>
+                        <div class="facilities">
+                            <div class="facilities-box">
+                                <img src="./images/pool.svg" alt="Swimming Pool">
+                                <span>Swimming Pool</span>
+                            </div>
+                            <div class="facilities-box">
+                                <img src="./images/restaurant.svg" alt="Restaurant">
+                                <span>Restaurant</span>
+                            </div>
+                        </div>
+                        <p>Unlock Goa with the perfect stay with 2 pints of chilled beers & discount on F&B at Fairfield by Marriott Calangute.</p>
+                        <div class="rating-verify">
+                            <span class="rating">9/10</span>
+                            <p>2 Verified Ratings</p>
+                        </div>
+                    </div>
+                    <div class="content-right">
+                        <div class="parking-rating">
+                            <button type="button" class="btn btn-secondary parking" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Parking">
+                                <i class="bi bi-car-front-fill"></i>
+                            </button>
+                            <div class="star-rating">
+                                <img src="./images/grade.svg" alt="3 Star Hotel">
+                                <p>3 Star Hotel</p>
+                            </div>
+                        </div>
+                        <div class="price-rate">
+                            <span class="left_at">3 left at</span>
+                            <div class="price-cut">
+                                <p><s>15,000</s></p>
+                                <div class="price-night">
+                                    <h5>₹4,950</h5>
+                                    <p>per night</p>
+                                </div>
+                            </div>
+                            <div class="rest-detials">
+                                <p>₹25,974 total includes taxes & fees</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
 
 const listingsContainer = document.getElementById('hotel-listings');
 for (let i = 0; i < 7; i++) {
@@ -259,3 +401,47 @@ $('#hotel-slider').slick({
     }]
 });
 
+
+
+
+
+
+
+$('body').on('click', '.origin-room', function(e){
+    $('.search-sections-part').attr('style', 'margin-top:-62px');
+    $('.search-sections-part').toggleClass('d-none');
+    $('.form-control-custom').focus();
+    // $.get(baseUrl+'/get/airports?q=', function(res){
+    //     let li = '';
+    //     $('.deletable-li').addClass('d-none');
+    //     if(!res.length){
+
+    //     }
+    //     $.each(res, function(index, data){
+    //         if(data.airport_name.length > 40){
+    //             var airport_name = data.airport_name.substring(0, 40) + '..';
+    //         }else{
+    //             var airport_name = data.airport_name;
+    //         }
+
+    //         li += `<li class="clicker">
+    //             <a href="#">
+    //                 <div class="d-flex justify-content-between w-100">
+    //                     <div class="d-flex">
+    //                         <div class="icon">
+    //                             <span class="fa-solid fa-plane-departure"></span>
+    //                         </div>
+    //                         <div class="text ms-3">
+    //                             <h5 class="city_name">${data.area}</h5>
+    //                             <p class="airport_name">${airport_name}</p>
+    //                         </div>
+    //                     </div>
+    //                     <div class="code airport_code"> ${data.port_code} </div>
+    //                 </div>
+    //             </a>
+    //         </li>`;
+    //     });
+    //     $('.appender-class').html(li);
+    // });
+    
+});

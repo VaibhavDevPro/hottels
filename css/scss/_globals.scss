@@ -1,20 +1,23 @@
 //---Color
 $primary_color:#FF541E;
 $secondary_color:#007B97;
+$tertiary_color:#005C72;
 $star_color:#FFC531;
 $star_color_hover:#fabb1c;
-$tertiary_color:#005C72;
 
 $primary_grey:#F6F6F6;
 $secondary_grey:#EBEBEB;
 $tertiary_grey:#A7A9AC;
 $quaternary_grey:#555555;
+$primary-blue:#1459D8;
 
 
 $primary_grey_two:#EBF3F8;
 
 $primary_black:#1A1F24;
 $primary_white:#ffffff;
+
+$primary_light_bg:#f2f2f2;
 
 
 $primary_fill_color:#6E7E8E;
@@ -24,18 +27,23 @@ $primary_fill_four:#3E4C56;
 
 $primary_fill_border:#E0E0E0;
 $stroke_color:#E0E0EB;
+$stroke_color_two:#E9E9EB;
 
 $theme_color:#0573E0;
 $theme_green:#32A16C;
 $theme_red:#FF4141;
 $theme_dark_red:#FF1E1E;
 $light_bg_color:#F9F9F9;
+$start_color:#FFC531;
+$primary_btn_color:#FCDE90;
+
 
 //---Fonts
 $primary_font:'PlusJakartaSans-Regular';
 $secondary_font:'PlusJakartaSans-SemiBold';
 $medium_font:'PlusJakartaSans-Medium';
 $bold_font:'PlusJakartaSans-Bold';
+
 
 //---Font Family
 /* Bootstrap Styles */
