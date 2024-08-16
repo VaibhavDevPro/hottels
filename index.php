@@ -1,8 +1,8 @@
 <?php require_once 'includes/header.php'; ?>
-<section class="section-1 lazy d-flex align-items-center bg-image-style" data-bg="images/hero-bg.jpg">
+<section class="section-1 lazy d-flex align-items-center bg-image-style" data-bg="images/home-9.jpg">
 	<div class="container ">
 		<div class="row">
-			<div class="col-12 col-xl-7">
+			<div class="col-12 col-xl-7 position-relative z-3">
 				<span>Unlock Hot Deals & Hotels</span>
 				<h1>Discover  the Best <span>Stays at Best Rates</span></h1>
 			</div>
@@ -36,7 +36,7 @@
 								    	<label for="exampleInputEmail1" class="form-label">City / Location</label>
 								    	<h4 class="section-hotel origin-room">Panjim, Goa</h4>
 								    	<input type="email" class="form-control d-none" id="exampleInputEmail1" aria-describedby="emailHelp">
-								    	<div class="search-section search-sections-part">
+								    	<div class="search-section search-sections-part d-none">
 	                                        <div class="search-content-container" id="search-box-container">
 	                                            <ul>
 	                                                <li class="mb-2 searcher">
@@ -201,13 +201,17 @@
 								<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-2 repeat-section">
 									<div class="search-item price-range">
 								    	<label for="exampleInputEmail1" class="form-label">Price per night</label>
-								    	<select class="form-control select2-class">
-								    		<option>₹1500 - ₹2500</option>
-								    		<option>₹2500 - ₹3000</option>
-								    		<option>₹3000 - ₹3500</option>
-								    		<option>₹3500 - ₹4000</option>
-								    		<option>All</option>
-								    	</select>
+								    	<div class="px-0">
+								    		<select class="form-control select2-class" data-minimum-results-for-search="Infinity">
+									    		<option>₹1500 - ₹2500</option>
+									    		<option>₹2500 - ₹3000</option>
+									    		<option>₹3000 - ₹3500</option>
+									    		<option>₹3500 - ₹4000</option>
+									    		<option>All</option>
+									    	</select>
+								    	</div>	
+      
+								    	
 									</div>			
 								</div>
 								<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-1 repeat-section">
@@ -221,12 +225,12 @@
 					<div class="tab-pane" id="group-booking">
 						<form>
 							<div class="row g-0">
-								<div class="col-3 repeat-section">
+								<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 repeat-section">
 									<div class="search-item position-relative room-search">
 								    	<label for="exampleInputEmail1" class="form-label">City / Location</label>
 								    	<h4 class="section-hotel origin-room">Panjim, Goa</h4>
 								    	<input type="email" class="form-control d-none" id="exampleInputEmail1" aria-describedby="emailHelp">
-								    	<div class="search-section search-sections-part">
+								    	<div class="search-section search-sections-part d-none">
 	                                        <div class="search-content-container" id="search-box-container">
 	                                            <ul>
 	                                                <li class="mb-2 searcher">
@@ -244,26 +248,122 @@
 	                                                    </a>
 	                                                </li>
 	                                                <span class="appender-class"></span>
+	                                                <li class="clicker">
+										                <a href="#">
+										                    <div class="d-flex justify-content-between w-100">
+										                        <div class="d-flex align-items-center">
+										                            <div class="icon">
+										                                <span class="icon-location"></span>
+										                            </div>
+										                            <div class="text ms-3">
+										                                <h5 class="city_name">Lucknow</h5>
+										                                <p class="state_name">Utter Pradesh</p>
+										                            </div>
+										                        </div>
+										                        <div class="count d-block text-center">
+										                        	<p>290</p>
+										                        	<b>Hotels</b>
+										                    	</div>
+										                    </div>
+										                </a>
+										            </li>
+										            <li class="clicker">
+										                <a href="#">
+										                    <div class="d-flex justify-content-between w-100">
+										                        <div class="d-flex align-items-center">
+										                            <div class="icon">
+										                                <span class="icon-location"></span>
+										                            </div>
+										                            <div class="text ms-3">
+										                                <h5 class="city_name">Kanpur</h5>
+										                                <p class="state_name">Utter Pradesh</p>
+										                            </div>
+										                        </div>
+										                        <div class="count d-block text-center">
+										                        	<p>290</p>
+										                        	<b>Hotels</b>
+										                    	</div>
+										                    </div>
+										                </a>
+										            </li>
+										            <li class="clicker">
+										                <a href="#">
+										                    <div class="d-flex justify-content-between w-100">
+										                        <div class="d-flex align-items-center">
+										                            <div class="icon">
+										                                <span class="icon-location"></span>
+										                            </div>
+										                            <div class="text ms-3">
+										                                <h5 class="city_name">Varansi</h5>
+										                                <p class="state_name">Utter Pradesh</p>
+										                            </div>
+										                        </div>
+										                        <div class="count d-block text-center">
+										                        	<p>290</p>
+										                        	<b>Hotels</b>
+										                    	</div>
+										                    </div>
+										                </a>
+										            </li>
+										            <li class="clicker">
+										                <a href="#">
+										                    <div class="d-flex justify-content-between w-100">
+										                        <div class="d-flex align-items-center">
+										                            <div class="icon">
+										                                <span class="icon-location"></span>
+										                            </div>
+										                            <div class="text ms-3">
+										                                <h5 class="city_name">Ayodhya</h5>
+										                                <p class="state_name">Utter Pradesh</p>
+										                            </div>
+										                        </div>
+										                        <div class="count d-block text-center">
+										                        	<p>290</p>
+										                        	<b>Hotels</b>
+										                    	</div>
+										                    </div>
+										                </a>
+										            </li>
+										            <li class="clicker">
+										                <a href="#">
+										                    <div class="d-flex justify-content-between w-100">
+										                        <div class="d-flex align-items-center">
+										                            <div class="icon">
+										                                <span class="icon-location"></span>
+										                            </div>
+										                            <div class="text ms-3">
+										                                <h5 class="city_name">Prayagraj</h5>
+										                                <p class="state_name">Utter Pradesh</p>
+										                            </div>
+										                        </div>
+										                        <div class="count d-block text-center">
+										                        	<p>290</p>
+										                        	<b>Hotels</b>
+										                    	</div>
+										                    </div>
+										                </a>
+										            </li>
+
 	                                            </ul>
 	                                        </div>
 	                                    </div>
 								  	</div>			
 								</div>
-								<div class="col-2 repeat-section">
+								<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-2 repeat-section">
 									<div class="search-item">
 								    	<label for="exampleInputEmail1" class="form-label">Check In</label>
 								    	<h4 class="section-hotel check-in">August 12, 2024</h4>
 								    	<input type="email" class="form-control d-none " id="exampleInputEmail1" aria-describedby="emailHelp">
 								  	</div>			
 								</div>
-								<div class="col-2 repeat-section">
+								<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-2 repeat-section">
 									<div class="search-item">
 								    	<label for="exampleInputEmail1" class="form-label">Check out</label>
 								    	<h4 class="section-hotel check-out">August 28, 2024</h4>
 								    	<input type="email" class="form-control d-none" id="exampleInputEmail1" aria-describedby="emailHelp">
 								  	</div>			
 								</div>
-								<div class="col-3 repeat-section">
+								<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-3 repeat-section">
 									<div class="search-item position-relative">
 								    	<label for="exampleInputEmail1" class="form-label">Rooms & Guests</label>
 								    	<div class="booking-form__input guests-input">
@@ -293,7 +393,7 @@
 								  	</div>			
 								</div>
 								
-								<div class="col-2 repeat-section">
+								<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-2 repeat-section">
 									<div class="search-item">
 								   		<button class="btn btn-outline-primary d-flex" title="Search"><span class="icon-search-1 pe-2"></span>Search</button>
 								   	</div>			

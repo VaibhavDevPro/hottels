@@ -53,18 +53,27 @@
 							<a class="nav-link" href="#" title="Destinations">Destinations</a>						 
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#" title="Offers">Offers</a>
-						</li>
-						<li class="nav-item">
 							<a class="nav-link" href="#" title="Consult Now">Consult Now</a>
 						</li>
-						
 					</ul>
-
 					<div class="contact-us">
-						<a class="btn btn-outline-primary" href="#" title="Login">
+						<a class="btn btn-outline-primary d-none" id="login" href="#" title="Login">
 							Login
 						</a>
+						<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+							<div class="d-flex align-items-center">
+								<div class="icon">
+									<span>S</span>
+								</div>
+								<div class="name ps-2">
+									Santosh Singh
+								</div>
+							</div>
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						    <li><a class="dropdown-item" href="profile.php"><span class="icon-account-circle-user-profile pe-2"></span>Manage profile</a></li>
+						    <li><a class="dropdown-item" href="#" title="Sign Out" id="logout"><span class="icon-login-flight pe-2"></span>Log out</a></li>
+						</ul>
 					</div>
 				</div>			
 			</div>

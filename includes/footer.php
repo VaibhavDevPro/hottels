@@ -76,15 +76,18 @@
 
 			<div class="col-lg-12 col-xl-10">
 			 	<div class="row ms-xl-4">			 		
-			 		<div class="col-6 col-md-4 col-lg-4 col-xl-3 mb-4 mb-xl-0">
-			 			<h4>Destinations</h4>			 			
-		 				<ul>
-		 					<li><a href="#" title="Varanasim">Varanasi</a></li>
-		 					<li><a href="#" title="Ayodhaya">Ayodhaya</a></li>
-		 					<li><a href="#" title="Carrers">Carrers</a></li>
-		 					<li><a href="#" title="Mumbai">Mumbai</a></li>
-		 					<li><a href="#" title="New Delhi">New Delhi</a></li>
-		 				</ul>                        
+			 		<div class="col-6 col-md-4 col-lg-4 col-xl-3 mb-4 mb-xl-0 d-xl-flex justify-content-xl-center">
+			 			<div>
+			 				<h4>Destinations</h4>			 			
+			 				<ul>
+			 					<li><a href="#" title="Varanasim">Varanasi</a></li>
+			 					<li><a href="#" title="Ayodhaya">Ayodhaya</a></li>
+			 					<li><a href="#" title="Carrers">Carrers</a></li>
+			 					<li><a href="#" title="Mumbai">Mumbai</a></li>
+			 					<li><a href="#" title="New Delhi">New Delhi</a></li>
+			 				</ul> 
+			 			</div>
+			 			                       
                     </div>
 			 		<div class="col-6 col-md-4 col-lg-4 col-xl-3 mb-4 mb-xl-0 d-xl-flex justify-content-xl-center">
 			 			<div>

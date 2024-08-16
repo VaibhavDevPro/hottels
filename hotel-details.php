@@ -13,7 +13,7 @@
 						    	<label for="exampleInputEmail1" class="form-label">City / Location</label>
 						    	<h4 class="section-hotel origin-room">Panjim, Goa</h4>
 						    	<input type="email" class="form-control d-none" id="exampleInputEmail1" aria-describedby="emailHelp">
-						    	<div class="search-section search-sections-part">
+						    	<div class="search-section search-sections-part d-none">
                                     <div class="search-content-container" id="search-box-container">
                                         <ul class=" ">
                                             <li class="mb-2 searcher">
@@ -302,7 +302,7 @@
 								<ul>
 									<li><span class="icon-pool pe-2"></span>Swimming Pool</li>
 									<li><span class="icon-restaurant pe-2"></span>Restaurant</li>
-									<li><span class="icon-polocal-cafeol pe-2"></span>Breakfast available</li>
+									<li><span class="icon-local-cafe pe-2"></span>Breakfast available</li>
 									<li><span class="icon-local-bar pe-2"></span>Bar</li>
 									<li><span class="icon-mode-cool pe-2"></span>Air conditioning</li>
 								</ul>
