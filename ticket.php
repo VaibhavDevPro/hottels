@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Ticket Pdf</title>
     <link rel="stylesheet" href="./css/custom.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,10 +29,10 @@
                 <img src="./images/Logo-b.svg" alt="">
             </div>
             <div class="page-content d-flex flex-column mt-4">
-                <div class="d-flex justify-content-between align-items-center border-bottom pb-2">
+                <div class="d-flex justify-content-between align-items-center border-bottom-custom-dark pb-2">
                     <div class="d-flex gap-2 align-items-start">
                         <div class="d-flex flex-column">
-                            <h1 class="fs-6 text-color mb-0">Fairfield by Marriott Goa Calangute</h1>
+                            <h1 class="fs-6 text-color mb-0 fw-semibold">Fairfield by Marriott Goa Calangute</h1>
                             <p class="text-color-secondry mb-0 fs-8">H No, 1/72C, Gauravaddo, Calangute, Goa 403516</p>
                         </div>
                         <div class="border-custom rounded px-2">
@@ -51,7 +51,7 @@
                 <table class="table">
                     <tbody>
                         <tr>
-                            <td class="border-bottom pt-18 pb-18">
+                            <td class="border-bottom-custom pt-18 pb-18">
                                 <div class="d-flex align-items-center gap-1">
                                     <span class="material-symbols-outlined text-color-secondary fs-7">
                                         calendar_month
@@ -59,13 +59,13 @@
                                     <p class="fs-7 text-color-secondary mb-0 fw-semibold">2 Nights(s) stay</p>
                                 </div>
                             </td>
-                            <td class="border-bottom pt-18 pb-18">
+                            <td class="border-bottom-custom pt-18 pb-18">
                                 <div class="d-flex flex-column align-items-start">
                                     <p class="fs-9 text-color mb-0 fw-regular">Check-In: 01:00PM</p>
                                     <p class="fs-7 text-color-secondary mb-0 fw-semibold">09 Aug. 2024</p>
                                 </div>
                             </td>
-                            <td class="border-bottom pt-18 pb-18">
+                            <td class="border-bottom-custom pt-18 pb-18">
                                 <div class="d-flex flex-column align-items-start">
                                     <p class="fs-9 text-color mb-0 fw-regular">Check-Out: 03:00PM</p>
                                     <p class="fs-7 text-color-secondary mb-0 fw-semibold">12 Aug. 2024</p>
@@ -73,7 +73,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="border-bottom pt-18 pb-18">
+                            <td class="border-bottom-custom pt-18 pb-18">
                                 <div class="d-flex align-items-center gap-1">
                                     <span class="material-symbols-outlined text-color-secondary fs-7">
                                         calendar_month
@@ -81,7 +81,7 @@
                                     <p class="fs-7 text-color-secondary mb-0 fw-semibold">2 Travellers</p>
                                 </div>
                             </td>
-                            <td class="border-bottom pt-18 pb-18">
+                            <td class="border-bottom-custom pt-18 pb-18">
                                 <div class="d-flex flex-column gap-2">
                                     <div class="d-flex flex-column justify-content-between align-items-start">
                                         <p class="fs-7 text-color mb-0 fw-semibold">Mr. Admin Kumar</p>
@@ -93,7 +93,7 @@
                                     </div>
                                 </div>
                             </td>
-                            <td class="border-bottom pt-18 pb-18">
+                            <td class="border-bottom-custom pt-18 pb-18">
                                 <div class="d-flex flex-column align-items-start">
                                     <div class="d-flex flex-column gap-2">
                                         <p class="fs-7 text-color mb-0 fw-semibold">M</p>
@@ -142,13 +142,13 @@
                 </div>
 
                 <div class="mt-4">
-                    <h6 class="text-color fw-semibold border-bottom fs-7 pb-2">Cancellation Policy</h6>
+                    <h6 class="text-color fw-semibold border-bottom-custom-dark fs-7 pb-2">Cancellation Policy</h6>
                 </div>
 
                 <table class="table">
                     <tbody>
                         <tr>
-                            <td class="border-bottom pt-18 pb-18">
+                            <td class="border-bottom-custom pt-18 pb-18">
                                 <div class="d-flex align-items-center gap-1">
                                     <div class="box-18 circle-green">
                                         <span class="material-symbols-outlined text-white fs-7">
@@ -158,24 +158,24 @@
                                     <p class="fs-7 text-color-secondary mb-0 fw-semibold">Free Cancellation:</p>
                                 </div>
                             </td>
-                            <td colspan="2" class="border-bottom pt-18 pb-18">
+                            <td colspan="2" class="border-bottom-custom pt-18 pb-18">
                                 <p class="fs-8 text-color mb-0 fw-semibold">
                                     Cancel your booking up to 48 hours before check-in and receive a full refund.
                                 </p>
                             </td>
                         </tr>
                         <tr>
-                            <td class="border-bottom pt-18 pb-18">
+                            <td class="border-bottom-custom pt-18 pb-18">
                                 <div class="d-flex align-items-center gap-1">
                                     <div class="box-18 circle-yellow">
                                         <span class="material-symbols-outlined text-white fs-7">
-                                            check_circle
+                                            refresh
                                         </span>
                                     </div>
                                     <p class="fs-7 text-color-secondary mb-0 fw-semibold">Partial Refund: </p>
                                 </div>
                             </td>
-                            <td colspan="2" class="border-bottom pt-18 pb-18">
+                            <td colspan="2" class="border-bottom-custom pt-18 pb-18">
                                 <p class="fs-8 text-color mb-0 fw-semibold">
                                     Cancel your booking up to 48 hours before check-in and receive a full refund.
                                 </p>
@@ -200,7 +200,7 @@
                     </tbody>
                 </table>                
             </div>
-            <div class="page-footer d-flex align-items-center justify-content-between">
+            <div class="page-footer d-flex align-items-center justify-content-between mt-auto">
                     <img src="./images/Logo-b.svg" alt="" width="54">
                     <div class="line"></div>
                     <p class="text-color-secondary fs-10 mb-0">www.hottel.in</p>
